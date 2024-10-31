@@ -1,0 +1,34 @@
+@import '../../mixins.scss';
+
+.project-element{
+  position: relative;
+  border-radius: 20px;
+  @include custom-1-box-shadow(normal);
+  background-image: url('../../../images/projects/coming-soon.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  aspect-ratio: 16 / 9;
+  cursor: pointer;
+
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+  }
+
+  &:hover{
+    @include custom-1-box-shadow(hover);
+    background-image: none;
+    background-color: #3498db;
+    
+    .content {
+      opacity: 1;
+    }
+  }
+}

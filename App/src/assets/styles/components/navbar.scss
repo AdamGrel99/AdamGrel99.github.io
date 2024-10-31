@@ -1,0 +1,28 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+nav{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.nav-link{
+  margin: 10px;
+  padding: 12px 26px;
+  background-color: $primary-color;
+  color: white;
+  text-decoration-line: none;
+  border-radius: 20px;
+  @include custom-button-animation();
+  
+  &:hover{
+    background-color: $primary-color-hover;
+    @include custom-button-animation(hover);
+  }
+}
+
+.icon-spacing{
+  margin-right: 8px;
+}

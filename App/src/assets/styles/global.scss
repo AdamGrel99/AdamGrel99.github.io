@@ -1,0 +1,21 @@
+@import './variables';
+
+body {
+  background: $background-color;
+  background-size: 300% 300%;
+  animation: gradientBackground 10s ease infinite;
+  color: $font-color;
+  font-family: $font-stack;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

@@ -1,0 +1,9 @@
+@import '../mixins.scss';
+
+.home-image-box{
+  @include flexCenter();
+  
+  img{
+    width: 90%;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../mixins.scss';
+
+.layout{
+  display: flex;
+  
+  main{
+    height: 100vh;
+    width: 80vw;
+    padding: 15px;
+    @include flexCenter();
+  }
+}
